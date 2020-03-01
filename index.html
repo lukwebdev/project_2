@@ -1,0 +1,195 @@
+<!-- <!doctype> Document Type Declaration -->
+<!DOCTYPE html> 
+<!-- <html> Defines the root of an HTML document -->
+<html lang="en">
+<!-- <head> Defines information about the document -->
+<head>
+  <!-- <meta> Defines metadata about an HTML document -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Hacker">
+  <meta name="description" content="My first website WWW, HTML & CSS!">
+  <!-- <title >Defines a title for the document -->
+  <title>Software Development</title>
+  <!-- href	Specifies the URL of the page the link goes to -->
+  <link rel="icon" href="favicon.png">
+  <meta name='keywords' content='html, css, junior, job, frontend, portfolio, software development'>
+  <meta name='robots' content='index,follow'>
+  <!-- <link> Defines the relationship between a document and an external resource
+(most used to link to style sheets) -->
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <!-- src	Specifies the URL of the media file -->
+  <script src="https://kit.fontawesome.com/3df416348a.js" crossorigin="anonymous"></script>
+  <meta name='url' content='http://lukwebdev.online'>
+  <meta property="og:title" content="Software Development" />
+
+</head>
+<!-- <body> Defines the document's body -->
+<body>
+  <!--<div> Defines a block section in a document / class	Specifies one or more classnames for an element -->
+  <div class="wrap">
+<!-- menu -->
+    <nav>
+      <!-- <ol>	Defines an ordered list -->
+      <ol class="clearfix">
+        <!-- <a>	Defines a hyperlink  / <li>	Defines a list item -->
+        <li><a href="#cyber">Cyber Security</a></li>
+        <li><a href="#coding">Coding</a></li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+<!-- header -->
+    <header>
+      <!--<h1> - <h6> Defines HTML headings/<span> Defines an inline section in a document -->
+      <h1><span>W</span>ant to become a <span>S</span>oftware <span>D</span>eveloper ?</h1>
+    </header>
+<!-- main -->
+    <main>
+      <!-- <p>	Defines a paragraph -->
+      <p class="description">You will <strong>learn</strong> the basics of <strong>cyber-security</strong> including
+        cryptography, basic <strong>hacking</strong> techniques, secure <strong>coding</strong> and network security
+        testing.</p>
+      <section class="features">
+
+        <div class="feature">
+          <div class="image1">
+            <p>Raspberry Pi</p>
+          </div>
+          <h2>Learn languages</h2>
+        </div>
+
+        <div class="feature">
+          <div class="image2">
+            <p>Modern Design</p>
+          </div>
+          <h2>Create a website</h2>
+        </div>
+
+        <div class="feature">
+          <div class="image3">
+            <!-- <abbr>	Defines an abbreviation or an acronym -->
+            <p><abbr title="Quality and Qualifications Ireland ">QQI</abbr> Level 5</p>
+          </div>
+          <h2>Get awarded</h2>
+        </div>
+
+      </section>
+    </main>
+<!-- cyber security -->
+    <!-- id	Specifies a unique id for an element -->
+    <section id="cyber">
+      <h2><span>C</span>yber <span>S</span>ecurity</h2>
+      <div class="tips clearfix">
+        <div class="info">
+          <!-- <table>	Defines a table -->
+          <table>
+            <!-- <caption>	Defines a table caption -->
+            <caption>Secure Tips</caption>
+            <thead>
+              <!-- <tr>	Defines a row in a table -->
+              <tr>
+                <!-- <th>	Defines a header cell in a table -->
+                <th>#</th>
+                <th>Top 7 Secure Tips</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- <td>	Defines a cell in a table -->
+                <td>Tip #1</td>
+                <td><strong>Keep</strong> up with Updates</td>
+              </tr>
+              <tr>
+                <td>Tip #2</td>
+                <td>Secure <strong>Your</strong> Networks</td>
+              </tr>
+              <tr>
+                <td>Tip #3</td>
+                <td>Back up Your <strong>Data</strong></td>
+              </tr>
+              <tr>
+                <td>Tip #4</td>
+                <td>Practice <strong>Safe</strong> Browsing</td>
+              </tr>
+              <tr>
+                <td>Tip #5</td>
+                <td><strong>Always</strong> Assume Vulnerability</td>
+              </tr>
+              <tr>
+                <td>Tip #6</td>
+                <td>Make <strong>Use</strong> of HTTPs</td>
+              </tr>
+              <tr>
+                <td>Tip #7</td>
+                <td>Choose Difficult <strong>Passwords</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ytvideo">
+          <iframe title="7 Security Tips" src="https://www.youtube.com/embed/i0iLy8racHI?start=10" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+<!-- coding -->
+    <section id="coding">
+      <div class="bg">
+        <h2><span>C</span>oding</h2>
+        <!-- <q>	Defines a short quotation -->
+        <p class="motto"><q>Any fool can write code that a computer can understand. Good programmers write code that
+            humans can understand.</q></p>
+        <!-- <em>	Defines emphasized text -->
+        <p class="author"><em>Martin Fowler</em></p>
+      </div>
+    </section>
+<!-- contact -->
+    <section id="contact">
+      <h2><span>C</span>ontact</h2>
+      <div class="contact clearfix">
+
+        <form>
+          <!-- <input>	Defines an input control -->
+          <input type="text" placeholder="Your name" id="yourname">
+          <label for="yourname">Your name</label>
+
+          <input type="email" placeholder="Your e-mail" id="youremail">
+          <label for="youremail">Your e-mail</label>
+          <!-- <textarea>	Defines a multiline input control (text area) -->
+          <textarea id="yourmassage" placeholder="Your massage"></textarea>
+          <label for="yourmassage">Your massage</label>
+
+          <button>Send</button>
+        </form>
+
+        <div class="socials">
+          <h3>Contact Details</h3>
+          <!-- <ul>	Defines an unordered list -->
+          <ul>
+            <li><i class="fas fa-envelope"></i>hacknavan@lmetb.ie</li>
+            <li><i class="fas fa-phone-square"></i>044 999 2160</li>
+            <li>&nbsp;<i class="fas fa-mobile-alt"></i>089 495 9847</li>
+          </ul>
+        </div>
+
+        <div class="media">
+          <!-- <img>	Defines an image / alt	Alternate text when the original element fails to display / target	Specifies the target for where to open the linked document -->
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><img src="images/fb.png" alt="logo facebook"></a>
+          <a href="https://twitter.com/" target="_blank" rel="noreferrer"><img src="images/tw.png" alt="logo twitter"></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><img src="images/in.png" alt="logo indeed"></a>
+        </div>
+      </div>
+    </section>
+<!-- footer -->
+    <footer>
+      <!-- Special symbols -->
+      <p>&copy;&nbsp;2020 Hack Navan</p>
+    </footer>
+  </div>
+</body>
+</html>
