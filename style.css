@@ -1,0 +1,436 @@
+/* 
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Oswald', sans-serif; 
+#1B222E #2b323e */
+
+* {
+    /* padding	A shorthand property for all the padding-* properties */
+    padding: 0;
+    /* margin	Sets all the margin properties in one declaration */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* element(eg.html)	Selects all elements of a given type */
+html {
+    /* font-size	Specifies the font size of text */
+    font-size: 10px;
+    /* font-family	Specifies the font family for text */
+    font-family: 'Oswald', sans-serif;
+    min-width: 1240px;
+}
+
+h2 {
+    font-size: 4rem;
+    /* text-align	Specifies the horizontal alignment of text */
+    text-align: center;
+    /* color	Sets the color of text */
+    color: white;
+    letter-spacing: 1px;
+}
+
+span {
+    color: #ff493c;
+}
+
+strong {
+    color: #ffb820;
+}
+/* .class (eg.wrpa)	Selects all elements with class="..." */
+.wrap {
+    /* background-color	Specifies the background color of an element
+ */
+    background-color: #2b323e;
+}
+
+/* ---------- nav start---------- */
+
+nav ol {
+    padding: 30px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    /* list-style-type	Specifies the type of list-item marker */
+    list-style-type: none;
+}
+
+nav ol li {
+    /* float	Specifies whether or not a box should float */
+    float: left
+}
+
+nav ol li a {
+    display: block;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    padding: 10px;
+    font-size: 2.2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    /* text-decoration	Specifies the decoration added to text (e.g. none, underline, line-through) */
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8);
+    /* border	A shorthand property for border-width, border-style and border-color */
+    border-bottom: 2px solid #2b323e;
+}
+
+nav ol li a:hover {
+    border-bottom: 2px solid #ffb820;
+    color: white;
+}
+
+
+/* ---------- nav finish---------- */
+
+/* ---------- header start ---------- */
+
+header {
+    height: 40vh;
+    /* background-image	Specifies one or more background images for an element */
+    background-image: url(./images/robot.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+header h1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    line-height: 40.1vh;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- header finish ---------- */
+
+/* ---------- main start ---------- */
+
+main {
+    max-width: 1440px;
+    margin: 5vh auto;
+    font-size: 0;
+}
+
+main p.description {
+    font-size: 3rem;
+    /* %	Relative to the parent element */
+    line-height: 200%;
+    text-align: center;
+    color: white;
+    margin: 0 30px 50px 30px;
+}
+
+main section.features {
+    padding-bottom: 30px;
+}
+
+main div.feature {
+    display: inline-block;
+    width: 33.33%;
+}
+
+main .image1 {
+    height: 200px;
+    max-width: 400px;
+    margin: 20px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./images/pi.png);
+}
+
+main .image2 {
+    height: 200px;
+    max-width: 400px;
+    margin: 20px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./images/www.jpg);
+}
+
+main .image3 {
+    height: 200px;
+    max-width: 400px;
+    margin: 20px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./images/qqi.png);
+}
+
+main .image3 abbr {
+    text-decoration: none;
+}
+
+main .feature p {
+    max-height: 200px;
+    line-height: 200px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 1s;
+    cursor: pointer;
+}
+
+main .feature p:hover {
+    opacity: 1;
+}
+
+/* ---------- main finish ---------- */
+
+/* ---------- cyber start ---------- */
+/* #id(eg.cyber)	Selects the element with id="..." */
+#cyber {
+    background-color: #1B222E;
+    padding-top: 50px;
+}
+
+.tips {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px 20px 80px;
+}
+
+#cyber .info,
+#cyber .ytvideo {
+    float: left;
+    width: 50%;
+}
+
+#cyber .info {
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#cyber table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#cyber table caption {
+    display: none;
+}
+
+#cyber table thead th {
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+#cyber table th,
+td {
+    padding: 3px 0;
+}
+
+#cyber table td:first-child {
+    text-shadow: #474747 3px 5px 2px;
+    /* font-weight	Specifies the weight of a font (e.g. normal, bold, bolder) */
+    font-weight: 600;
+}
+
+#cyber table tr:hover {
+    background-color: #2B323E;
+}
+
+#cyber .ytvideo iframe {
+    width: 560px;
+    height: 315px;
+    display: block;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+/* ---------- cyber finish ---------- */
+
+/* ---------- coding start ---------- */
+
+#coding {
+    text-align: center;
+    background-image: url(./images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+#coding p {
+    line-height: 200%;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 60px;
+    font-size: 35px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#coding .bg {
+    padding: 70px 20px;
+    background-color: rgba(0, 62, 112, 0.6);
+}
+
+#coding p.author {
+    margin-top: 60px;
+    /* font-style	Specifies the font style for text (e.g. italic) */
+    font-style: italic;
+    font-size: 25px;
+}
+
+/* ---------- coding finish ---------- */
+
+/* ---------- contact start ---------- */
+
+#contact {
+    background-color: #1B222E;
+    padding: 30px 20px;
+}
+
+.contact {
+    max-width: 1024px;
+    margin: 50px auto;
+}
+
+.contact form,
+.contact .socials {
+    float: left;
+    width: 50%;
+}
+
+.contact form {
+    margin-right: 120px;
+}
+
+.contact label {
+    display: none;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.contact input {
+    height: 40px;
+}
+
+.contact textarea {
+    height: 180px;
+}
+
+.contact input:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.contact textarea:focus {
+    box-shadow: 0 0 5px white;
+}
+
+.contact button {    
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 40px;
+    background-color: #1B222E;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    font-weight: 700;
+    color: black;
+    background-color: white;
+}
+
+.contact .socials {
+    width: 30%;
+    background-color: rgb(211, 211, 211);
+    margin-left: 50px;
+    padding: 0 20px;
+}
+
+.contact .socials h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact .socials ul {
+    list-style-type: none;
+}
+
+.contact .socials li {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.contact .socials li i {
+    margin-right: 15px;
+    text-align: right;
+}
+
+.contact .media {
+    width: 30%;
+    float: left;
+    font-size: 0;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.contact .media a {
+    margin-left: 20px;
+    display: inline-block;
+    height: 72px;
+    width: 72px;
+    text-align: center;
+    transition: 1s;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 32px;
+}
+/* a:link	Selects all unvisited links */
+.contact .media a:link {
+    opacity: 0.7;
+}
+/* a:visited	Selects all visited links */
+.contact .media a:visited {
+    background-color: #5cfa41;
+}
+/* a:hover	Selects links when mouse is over them */
+.contact .media a:hover {
+    opacity: 1;
+}
+/* a:active	Selects the active link */
+.contact .media a:active {
+    border-bottom: 5px solid rgb(248, 143, 5);
+}
+
+/* ---------- contact finish ---------- */
+
+/* ---------- footer start ---------- */
+
+footer {
+    background-color: #2b323e;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    /* em	Relative to the font-size of the element (2em means 2 times the size of the current font) */
+    padding: 1em 0;
+    font-size: 2em;
+}
+
+/* ---------- footer finish ---------- */
